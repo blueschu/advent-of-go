@@ -5,6 +5,7 @@ import (
 	"os"
 
 	"github.com/blueschu/advent-of-go/advent"
+	"github.com/blueschu/advent-of-go/solutions"
 )
 
 func main() {
@@ -16,7 +17,9 @@ func main() {
 		os.Exit(1)
 	}
 
-	var solver = advent.PuzzleSolver{}
+	var solver = advent.PuzzleSolver{
+		{2017, &solutions.Y2017Solutions},
+	}
 
 	result, err := solver.SolvePuzzle(puzzleSelection)
 
