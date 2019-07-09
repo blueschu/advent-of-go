@@ -7,4 +7,5 @@ import (
 
 var Y2017Solutions = advent.SolutionSet{
 	0: y2017.SolveDay01,
+	1: y2017.SolveDay02,
 }
